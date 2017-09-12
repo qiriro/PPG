@@ -99,3 +99,21 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Data
+data/
+
+# Models
+models/
+
+# Results
+results/
+
+# Server Logs
+nohup.out
