@@ -49,8 +49,8 @@ def logistic_regression_classifier(features, labels):
 
 def support_vector_classifier(features, labels):
     parameters = {
-        'C': range(1, 101, 10),
-        'kernel': ('linear', 'poly', 'rbf', 'sigmoid'),
+        'C': [1.0, 10.0, 100.0],
+        'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
     }
     classifier = GridSearchCV(SVC(random_state=1, probability=True), parameters, n_jobs=-1)
     classifier.fit(features, labels)

@@ -11,7 +11,7 @@ from ppg import BASE_DIR
 from ppg.utils import exist, load_json, dump_json, load_model, dump_model, export_csv
 from ppg.learn import get_feature_set
 from ppg.learn import logistic_regression_classifier
-from ppg.learn import support_vector_classifier
+# from ppg.learn import support_vector_classifier
 from ppg.learn import gaussian_naive_bayes_classifier
 from ppg.learn import decision_tree_classifier
 from ppg.learn import random_forest_classifier, adaboost_classifier, gradient_boosting_classifier
@@ -34,7 +34,7 @@ def classify():
     ]
     classifiers = [
         ('logistic_regression', logistic_regression_classifier, ),
-        ('support_vector', support_vector_classifier, ),
+        # ('support_vector', support_vector_classifier, ),
         ('gaussian_naive_bayes', gaussian_naive_bayes_classifier, ),
         ('decision_tree', decision_tree_classifier, ),
         ('random_forest', random_forest_classifier, ),
